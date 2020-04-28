@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HW 2</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <h1>Поняття Front-End. HTML</h1>
+    <main>
+        <table>
+            <tr>
+                <th>First Name</th>
+                <th>Second name</th>
+                <th>Phone number</th>
+                <th>Email</th>
+            </tr>
+            <tr>
+                <td>Aleksandr</td>
+                <td>Belov</td>
+                <td>8498466456</td>
+                <td>belyi@email.com</td>
+            </tr>
+            <tr>
+                <td>Kosmos</td>
+                <td>Holmogorov</td>
+                <td>55644664684</td>
+                <td>kos@email.com</td>
+            </tr>
+            <tr>
+                <td>Valeriy</td>
+                <td>Filatov</td>
+                <td>6486468923</td>
+                <td>fil@email.com</td>
+            </tr>
+        </table>
+        <form action="">
+            <h3>Some form to fill</h3>
+            <input type="text" placeholder="Enter your first name"> 
+            <input type="text" placeholder="Enter your second name">
+            <p>What is your sex?</p>
+            <label for="male">Male</label>
+            <input id="male" name="sex" value="male" type="radio" checked>
+            <label for="female">Female</label>
+            <input id="female" name="sex" value="female" type="radio">
+            <textarea name="question" id="question" cols="30" rows="5" placeholder="Enter your question"></textarea>
+
+            <select id="town">
+                <option value="example" selected disabled>Choose your town</option>
+                <option value="Kyiv">Kyiv</option>
+                <option value="London">London</option>
+                <option value="New York">New York</option>
+                <option value="Madrid">Madrid</option>
+            </select>
+            <p>Choose your language</p>
+            <input id="ua" type="checkbox">
+            <label for="ua">Ukrainian</label>
+            <br>
+            <input id="eng" type="checkbox">
+            <label for="eng">Englsih</label>
+            <br>
+            <input id="esp" type="checkbox">
+            <label for="esp">Spanish</label>
+            <br>
+            <button type="button">Sned</button>
+            <button type="button" onclick="reloadPage()">Reload page</button>
+            
+        </form>
+    </main>
+</body>
+</html>
