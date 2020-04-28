@@ -23,6 +23,8 @@ h1{
 
 table{
     flex-basis: 100%;
+    border: 2px solid #000;
+    border-radius: 5px;
 }
 
 form{
@@ -33,28 +35,32 @@ th{
     background: #b50000;
     color: #000;
     padding: 10px 0;
+    border: 2px solid #000;
+    box-sizing: border-box;
 }
 
 td {
-    background: #d69711;
     padding: 5px 0;
+    border: 2px solid #000;
+    box-sizing: border-box;
+    text-align: center;
 }
 
 th:first-child {
-    border-top-left-radius: 10px;
+    border-radius: 5px 0 0 0;
 }
 
 
 th:last-child {
-    border-top-right-radius: 10px;
+    border-radius: 0 5px 0 0;
 }
 
 tr:last-child td:first-child {
-    border-radius: 0 0 0 10px;
+    border-radius: 0 0 0 5px;
 }
 
 tr:last-child td:last-child {
-    border-radius: 0 0 10px 0;
+    border-radius: 0 0 5px 0;
 }
 
 form {
