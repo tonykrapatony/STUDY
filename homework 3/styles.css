@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #2F2F2F;
+}
+.page-wrap {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+h1 {
+    width: 100%;
+    text-align: center;
+    color: #bfbfbf;
+}
+table {
+    width: calc(100% - 40px);
+    margin: 20px auto;
+    border-spacing: 0;
+    border: 2px solid #464646;
+    border-radius: 5px;
+    border-spacing: 0;
+    border-collapse: collapse;
+    color: #bfbfbf;
+}
+.sort-button {
+    width: 0;
+    height: 0;
+    margin: 20px 0 0 0;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-top: 8px solid #fff;
+    cursor: pointer;
+    position: relative;
+    top: 16px;
+    left: 15px;
+}
+th, td {
+    border-top: 2px solid #393939;
+    border-bottom: 2px solid #393939;
+    padding: 10px;
+    text-align: left;
+}
+th:first-child, td:first-child {
+    width: 50%;
+}
+th:nth-child(3), td:nth-child(3) {
+    text-align: end;
+}
+td:last-child {
+    cursor: pointer;
+}
+.date, .dots {
+    color: #464646; 
+}
+table:last-child tr td:first-child{
+    vertical-align: middle;
+}
+table:last-child tr td:first-child img{
+    width: 20px;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+table:last-child tr th:last-child {
+    padding: 0;
+}
+.search {
+    width: 200px;
+    height: 35px;
+    margin: 0 3px;
+    border: none;
+    border-radius: 5px;
+    background: #444444 left 5px center/15px url(./img/search.png) no-repeat;
+    padding: 5px 5px 5px 25px;
+    outline: none;
+    color: #6b6b6b;
+}
+.tabele-2 tr th:first-child, .tabele-2 tr td:first-child {
+    position: relative;
+    padding: 0 45px;
+}
+.checkbox-main, .checkbox  {
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    left: 15px;
+    border: 2px solid #464646;
+    border-radius: 5px;
+    overflow: hidden;
+    opacity: 1;
+    z-index: 4;
+}
+.checkbox-main img, .checkbox img {
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    position: absolute;
+    
+}
+.checkbox-main .active, .checkbox .active {
+    opacity: 1;
+    z-index: 3;
+    background: #18A0FA;
+}
+
+/*
+.checkbox {
+    position: relative;
+}
+.checkbox__input, .checkbox__input-main {
+    -webkit-appearance: none;
+    appearance: none;
+    position: absolute;
+}
+
+
+.checkbox__label:before {
+    content: "";
+    display: inline-block;
+    margin-right: 15px;
+    width: 15px;
+    height: 15px;
+    background-color: #3b3b3b;
+    border: 1px solid #7c7c7c;
+    border-radius: 5px;
+}
+.checkbox__label-main:before {
+    content: "";
+    display: inline-block;
+    margin-right: 15px;
+    width: 15px;
+    height: 15px;
+    background-color: #3b3b3b;
+    border: 1px solid #7c7c7c;
+    border-radius: 5px;
+}
+
+.checkbox__label:after {
+    content: "";
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    background: url(./img/check.svg) no-repeat;
+    background-size: 16px 16px;
+    opacity: 0;
+    position: absolute;
+    left: 10px;
+    z-index: 1;
+    margin-right: 15px;
+    background-color: #17a0fa;
+    border: 1px solid #7c7c7c;
+    border-radius: 5px;
+}
+.checkbox__label-main:after {
+    content: "";
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    background: url(./img/check.svg) no-repeat;
+    background-size: 16px 16px;
+    opacity: 1;
+    position: absolute;
+    left: 10px;
+    margin-right: 15px;
+    background-color: #17a0fa;
+    border: 1px solid #7c7c7c;
+    border-radius: 5px;
+}
+
+.checkbox__input:checked + .checkbox__label:after {
+    opacity: 1;
+}
+.checkbox__input-main:checked + .checkbox__label-main:after {
+    opacity: 1;
+}
+
+
+.checkbox__input-main:indeterminate {
+    content: "";
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    background: center url(./img/minus.svg) no-repeat;
+    background-size: 15px 13px;
+    position: absolute;
+    left: 11px;
+    top: 11px;
+    z-index: 1;
+    margin-right: 15px;
+    background-color: #17a0fa;
+    border: 1px solid #7c7c7c;
+    border-radius: 5px;
+}
+*/
