@@ -1,17 +1,16 @@
 $(function(){
-    var checkedboxes = $('.checkbox .active').length;
-    
-    var checkboxes = $('.checkbox').length;
-    
-    
-    $('.checkbox img').on('click', function(){
-        $(this).toggleClass('active');
-        var checkedboxes = $('.checkbox .active').length;
+    var checkedboxes = $('.checkbox .active'),
+        checkboxes = $('.checkbox'),
+        checkbox_label = $('.checkbox-label'),
+        checkbox = $('.checkbox img');
+    $('.checkbox-container').on('click', function(){
+        $(this).find('.checkbox img').toggleClass('active');
+        var checkedboxes = $('.checkbox .active');
 //        console.log(checkedboxes);
-        if (checkedboxes === 0) {
+        if (checkedboxes.length === 0) {
             $('.checkbox-main .minus').removeClass('active');
             $('.checkbox-main .check').removeClass('active');
-        } else if (checkedboxes !== checkboxes) {    
+        } else if (checkedboxes.length !== checkboxes.length) {    
             $('.checkbox-main .minus').addClass('active');
             $('.checkbox-main .check').removeClass('active');
         } else {
@@ -19,14 +18,15 @@ $(function(){
             $('.checkbox-main .check').addClass('active');
         }
     });
-
-    $('.checkbox-main').on('click', function(){
-        var checkboxes = $('.checkbox').length;
-        var checkedboxes = $('.checkbox .active').length;
+    
+ 
+    $('.checkbox-main, .checkbox-main-label').on('click', function(){
+        var checkboxes = $('.checkbox');
+        var checkedboxes = $('.checkbox .active');
 //        console.log('checkedboxes= ' + checkedboxes);
-        for (var i=0; i<=checkboxes; i++) {
+        for (var i=0; i<=checkboxes.length; i++) {
 //            console.log(i);
-            if (checkedboxes != checkboxes) {
+            if (checkedboxes.length != checkboxes.length) {
                 $('.checkbox img').addClass('active');
                 $('.check').addClass('active');
                 $('.checkbox-main .minus').removeClass('active');
