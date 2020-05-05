@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700&display=swap');
+/*
+font-family: 'Lato', sans-serif;
+*/
+.page-wrap {
+    width: 100vw;
+    height: 100vh;
+    float: left;
+    background: url(../img/background.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+    font-family: 'Lato', sans-serif;
+    color: #fff;
+}
+header {
+    max-width: 1440px;
+    width: 100%;
+    margin: 10px auto 140px auto;
+    padding: 0 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo-container {
+    display: flex;
+    align-items: center; 
+}
+.logo-container img {
+    width: 26px;
+    height: 19px;
+    margin: 0 7px 2px 0;
+}
+.logo-container span {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 29px;
+}
+nav {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+}
+.nav-list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.nav-list-item {
+    margin-right: 15px;
+    cursor: pointer;
+}
+.active {
+    font-weight: 700;
+}
+.language-slection {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.flag {
+    width: 32px;
+    height: 32px;
+    margin-right: 10px;
+}
+.language-slection span {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    margin-right: 5px;
+}
+.triangle {
+    width: 18px;
+    height: 18px;
+}
+.login-button {
+    width: 100px;
+    height: 40px;
+    border: 1px solid #FFFFFF;
+    box-sizing: border-box;
+    border-radius: 6px;
+    background: none;
+    color: #fff;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+}
+main {
+    max-width: 1440px;
+    width: 100%;
+    margin: 10px auto;
+}
+main h1 {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 72px;
+    line-height: 86px;
+    text-align: center;
+    letter-spacing: 0.05em;
+
+}
+main p {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 150%;
+    /* or 36px */
+    text-align: center;
+}
+.signup-button {
+    display: block;
+    width: 160px;
+    height: 50px;
+    margin: 40px auto;
+    background: #FFF;
+    border-radius: 6px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    color: #ED4C5C;
+}
