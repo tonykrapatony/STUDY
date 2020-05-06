@@ -26,6 +26,7 @@ header {
     width: 30px;
     cursor: pointer;
     display: none;
+    position: relative;
 }
 .burger-button span {
     display: block;
@@ -36,15 +37,15 @@ header {
 }
 .active-burger span:nth-child(1) {
     width: 26px;
-    position: relative;
-    transform: rotate(0deg);  
-    top: 50%;
+    margin: 0px;
+    position: absolute;
+    transform: rotate(30deg);
 }
 .active-burger span:nth-child(2) {
     width: 26px;
-    position: relative;
-    transform: rotate(-0deg);  
-    top: 50%;
+    margin: 0px;
+    position: absolute;
+    transform: rotate(-30deg);  
 }
 .active-burger span:nth-child(3) {
     display: none;
@@ -86,6 +87,7 @@ nav {
 .user-interface {
     display: flex;
     align-items: center;
+    justify-content: space-between;
 }
 .language-slection {
     display: flex;
@@ -158,60 +160,31 @@ main p {
 }
 @media screen and (max-width: 850px) {
     header {
-        justify-content: flex-start;
-    }
-    .burger-button {
-        width: 30px;
-        cursor: pointer;
-        display: block;
-    }
-    .user-interface {
-        margin-left: auto;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        position: relative;
     }
     .logo-container {
-        margin-left: 10px;
-    }
-    .logo-container img {
-        
+        width: 50%;
     }
     .logo-container span {
-        font-size: 16px;
-    }
-    .hiden {
-        display: none;
+        font-size: 18px;
     }
     nav {
-        position: absolute;
-        top: 50px;
-        left: 10px;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 14px;
+        order: 3;
+        margin: 40px auto;
     }
-    .nav-list {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        flex-wrap: wrap;
-    }
-    .nav-list-item {
-        margin: 5px 15px 5px 0;
-        cursor: pointer;
+    .user-interface {
+        width: 50%;
     }
     .language-slection {
-        margin-right: 5px;
+        margin-left: auto;
     }
     .flag {
         width: 28px;
         height: 28px;
         margin-right: 5px;
     } 
-    .language-slection span {
-        margin-right: 0;
-    }
-    .triangle {
-        
-    }
     .login-button {
         width: 90px;
         height: 35px;
@@ -223,12 +196,43 @@ main p {
     font-size: 18px;
     }
 }
-@media screen and (max-width: 374px) {
-    .flag { 
+@media screen and (max-width: 450px) {
+    header {
+        margin-bottom: 160px;
+    }
+    .logo-container {
+        
+    }
+    .burger-button {
+        display: block;
+    }
+    .hiden {
         display: none;
     }
-    .language-slection span {
-        margin-top: 1px;
+    nav {
+        position: absolute;
+        width: 100%;
+        top: 30px;
+    }
+    .nav-list {
+        flex-direction: column;
+        justify-content: center;
+    }
+    .nav-list-item {
+        text-align: center;
+        margin: 10px 0;
+        animation-duration: 2s;
+        animation-name: animation_menu;
+        animation-iteration-count: 1;
+    }
+    .user-interface {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        margin: 10px 0;
+    }
+    .language-slection {
+        margin: 0;
     }
     .login-button {
         width: 75px;
@@ -236,5 +240,13 @@ main p {
     }
     main p {
     font-size: 16px;
+    }
+}
+@keyframes animation_menu {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
     }
 }
