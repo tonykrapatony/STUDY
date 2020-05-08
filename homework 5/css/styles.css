@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700&display=swap');
+/*
+font-family: 'Lato', sans-serif;
+*/
+
+.page-wrap {
+    max-width: 1440px;
+    margin: 0 auto;
+    font-family: 'Lato', sans-serif;
+    
+}
+header {
+    background: #ED4C5C;
+}
+.header__wrap {
+    max-width: 1140px;
+    min-height: 500px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.header__text-container {
+    color: #FFF;
+}
+.header__text-container h2 {
+    max-width: 445px;
+    margin-bottom: 24px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 43px;
+}
+.header__text-container p:last-child {
+}
+.header__text-container p {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 140%;
+}
+
+.header__text-container ul{
+    display: flex;
+    align-items: center;
+    margin-top: 40px;
+}
+.header__text-container ul li {
+    margin-right: 23px;
+}
+.header__slider-container img {
+    width: 100%;
+}
+
+.feedback {
+
+}
+.feedback__container {
+    max-width: 1140px;
+    min-height: 500px;
+    margin: 115px auto 0 auto;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.feedback__text-container {
+    color: #000;
+}
+.feedback__text-container h3 {
+    height: 96px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 43px;
+}
+.feedback__text-container p {
+    max-width: 435px;
+    height: 53px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 140%;
+}
+.feedback__form-container {
+    
+}
+.feedback__form-container form {
+    
+}
+.feedback__form-container form input {
+    display: block;
+    width: 255px;
+    height: 60px;
+    margin-bottom: 24px;
+    border: 1px solid #333333;
+    box-sizing: border-box;
+    border-radius: 6px;
+    padding: 20px 30px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    color: rgba(19, 39, 67, 0.5);
+}
+.feedback__form-container form input[placeholder="First Name"] {
+    display: block;
+    float: left;
+    margin-right: 30px;
+}
+.feedback__form-container form input[type="tel"] {
+    display: block;
+    width: 100%;
+}
+.feedback__form-container form select {
+    display: block;
+    width: 100%;
+    margin-bottom: 24px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: url(../img/select-arrow.png) no-repeat;
+    background-position: right 26px top 23px; 
+    border: 1px solid #333333;
+    box-sizing: border-box;
+    border-radius: 6px;
+    padding: 20px 30px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    color: rgba(19, 39, 67, 0.5);
+}
+.feedback__form-container form button {
+    display: block;
+    width: 160px;
+    height: 50px;
+    background: #ED4C5C;
+    border: 1.5px solid #ED4C5C;
+    box-sizing: border-box;
+    border-radius: 6px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    text-transform: uppercase;
+    color: #FFF
+}
+
+footer {
+    min-height: 435px;
+    background: #FAFAFA;
+}
+.footer__container {
+    max-width: 1080px;
+    margin: 0 auto;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-top: 85px;
+    box-sizing: border-box;
+}
+.services ul li a:hover{
+    text-decoration: underline;
+}
+.contacts ul {
+    width: 66px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.contacts p.email {
+    margin-bottom: 10px;
+}
+.contacts p.phone {
+    margin-bottom: 20px;
+}
+.contacts p.email:hover, .contacts p.phone:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+.payment img {
+    width: 100%;
+}
+.adress h4, .services h4, .contacts h4, .payment h4 {
+    margin-bottom: 28px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 22px;
+    color: #101010;
+}
+.adress p, .services ul li, .contacts p {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 150%;
+    color: #101010;
+}
+.footer__privecy {
+    max-width: 1100px;
+    margin: 85px auto;
+}
+
+@media screen and (max-width: 989px) {
+    .header__text-container, .header__slider-container {
+        margin: 20px;
+    }
+    .feedback__text-container, .feedback__form-container {
+        margin: 20px;
+    }
+    .footer__privecy {
+        text-align: center;
+    }
+}
+@media screen and (max-width: 799px) {
+    .footer__container div {
+        width: 50%;
+        margin: 20px auto;
+        text-align: center;
+    }
+    .contacts ul {
+        margin: 0 auto;
+    }
+    .payment img {
+        width: 80%;
+    }
+}
+@media screen and (max-width: 579px) {
+    .feedback__form-container form input {
+        width: 100%;
+    }
+    .feedback__form-container form button {
+        margin: 0 auto;
+    }
+}
