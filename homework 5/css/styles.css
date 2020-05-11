@@ -145,7 +145,8 @@ header {
     font-size: 14px;
     line-height: 17px;
     text-transform: uppercase;
-    color: #FFF
+    color: #FFF;
+    cursor:pointer; 
 }
 
 footer {
