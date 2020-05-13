@@ -167,7 +167,7 @@ main {
     margin-top: 150px;
 }
 .features h3 {
-    width: 405px;
+    max-width: 405px;
     margin: 0 auto;
     font-family: Helvetica;
     font-style: normal;
@@ -282,9 +282,6 @@ main {
     justify-content: center;
     padding: 60px 20px 50px 20px;
     box-sizing: border-box;
-}
-.feedback__item img {
-    display: block;
 }
 .feedback__item div {
     max-width: 565px;
@@ -580,7 +577,6 @@ footer {
         margin: 20px auto;
     }
     .about__text h2, .about__text p {
-        max-width: 100%;
         text-align: center;
     }
     .features {
@@ -640,11 +636,6 @@ footer {
     .footer-top__button {
         margin: 20px auto;
     }
-    .footer-nav__block {
-        flex-basis: 50%;
-        margin: 20px auto;
-        justify-content: space-between;
-    }
 }
 @media screen and (max-width: 724px) {
     .header__text h1 {
@@ -655,6 +646,7 @@ footer {
         margin: 30px auto 0 auto;
         order: 1;
         justify-content: space-between;
+
     }
     .features__list {
         justify-content: center;
@@ -676,4 +668,17 @@ footer {
         flex-basis: 100%;
     }
 }
-@media screen and (max-width: 424px)
+@media screen and (max-width: 424px) {
+    .nav__menu {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .feedback__item {
+        flex-wrap: wrap;
+    }
+    .feedback__item img {
+    }
+    .feedback__item div {
+        flex-basis: 90%;
+    }
+}
