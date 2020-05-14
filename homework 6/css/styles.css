@@ -673,6 +673,9 @@ footer {
         flex-wrap: wrap;
         justify-content: center;
     }
+    .features, .feedback {
+        margin-top: 50px;
+    }
     .feedback__item {
         flex-wrap: wrap;
     }
@@ -680,5 +683,22 @@ footer {
     }
     .feedback__item div {
         flex-basis: 90%;
+    }
+    .footer-nav {
+        width: 100%;
+    }
+    .footer-nav__block {
+        flex-basis: 80%;
+        margin-bottom: 30px;
+    }
+    .title {
+        margin-top: 30px;
+    }
+    .footer-bottom {
+        width: 100%;
+        margin-top: 30px;
+    }
+    .footer-bottom__privecy {
+        flex-basis: 70%;
     }
 }
