@@ -237,8 +237,7 @@ main {
     width: 130px;
     height: 26px;
     display: block;
-    background-color: none;
-    background: url(../img/right-arrow.png) no-repeat;
+    background: #000 url(../img/right-arrow.png) no-repeat;
     background-position: top 6px right 0px;
     border: none;
     font-family: Avenir;
@@ -441,7 +440,7 @@ footer {
     cursor: pointer;
 }
 .request-demo:hover, .nav__transition-button:hover {
-    background: background: #FFF url(../img/right-arrow.png) no-repeat;
+    background: #FFF url(../img/right-arrow.png) no-repeat;
     background-size: 12%;
     background-position: right 29px top 22px;
     font-size: 16.5px;
