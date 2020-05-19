@@ -6,7 +6,7 @@ body {
     background-size: contain;
 }
 .page-wrap {
-    
+
 }
 header {    
     max-width: 1250px;
@@ -237,7 +237,7 @@ main {
     width: 130px;
     height: 26px;
     display: block;
-    background: #000 url(../img/right-arrow.png) no-repeat;
+    background: #fff url(../img/right-arrow.png) no-repeat;
     background-position: top 6px right 0px;
     border: none;
     font-family: Avenir;
