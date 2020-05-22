@@ -583,7 +583,7 @@ nav {
         margin: 0 0 0 auto;
     }
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
     .profile-info, .statistic, .hello{
         max-width: 620px;
         min-width: 100%;
@@ -628,7 +628,7 @@ nav {
         margin: 30px auto;
     }
 }
-@media screen and (max-width: 426px) {
+@media screen and (max-width: 425px) {
     nav {
         height: 180px;
         margin-bottom: 50px;
