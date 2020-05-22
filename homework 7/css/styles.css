@@ -600,7 +600,7 @@ nav {
         flex-wrap: wrap;
         justify-content: space-around;
     }
-    .courses-carusel__content, courses-carusel__control {
+    .courses-carusel__content, .courses-carusel__control {
         margin: 10px 0;
     }
     .courses-carusel__content div {
