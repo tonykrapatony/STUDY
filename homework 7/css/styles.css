@@ -628,7 +628,7 @@ nav {
         margin: 30px auto;
     }
 }
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 426px) {
     nav {
         height: 180px;
         margin-bottom: 50px;
