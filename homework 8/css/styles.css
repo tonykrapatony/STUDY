@@ -16,11 +16,20 @@
     background-color: #7f7f7f;
     margin: 5px;    
 }
+.block-list__item:hover {
+    box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.25);
+}
 .block-list__item:nth-last-child(-n+4) {
     background-color: #0009c6;
 }
+.block-list__item:nth-last-child(-n+4):hover {
+    box-shadow: 0 0 5px 5px rgba(0, 9, 198, 0.25);
+}
 .block-list__item:nth-child(4n-1) {
     background-color: #c60000;
+}
+.block-list__item:nth-child(4n-1):hover {
+    box-shadow: 0 0 5px 5px rgba(198, 0, 0, 0.25);
 }
 .button-container {
     width: 100%;
@@ -45,6 +54,12 @@
     border: 0;
     outline: none;
     cursor: pointer;
+}
+.button-container button:hover {
+    background: #339c7d;
+}
+.button-container button:active {
+    background: #226a54;
 }
 .button-container::before, .button-container::after {
     content: " ";
