@@ -143,6 +143,12 @@ nav {
     justify-content: center;
     align-items: center;
     background: url(../img/progres.png) no-repeat;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 40px;
+    color: #000000;
 }
 .courses-carusel__content__button {
     width: 120px;
@@ -606,6 +612,9 @@ nav {
     .courses-carusel__content div {
         margin: 0 10px;
     }
+    courses-carusel__content__progres {
+        font-size: 
+    }
     .courses-carusel__content__button {
         width: 90px;
     }
@@ -646,14 +655,22 @@ nav {
     .premium, .courses-statistic__diagram__parameters {
         flex-wrap: wrap;
     }
+    
     .courses-carusel__content {
         flex-wrap: wrap;
         justify-content: space-around;
+    }
+    .courses-carusel__content div {
+        margin: 0;
     }
     .courses-carusel__content__button {
         margin: 10px auto;
     }
     .all-courses__categories__item {
-        padding: 0;
+        padding: 7px;
+    }
+    .all-courses__item__button {
+        width: 100px;
+        height: 30px;
     }
 }
