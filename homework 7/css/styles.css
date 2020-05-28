@@ -206,6 +206,7 @@ nav {
     line-height: 26px;
     color: #000000;
     opacity: 0.3;
+    cursor: pointer;
 }
 .active-categorie {
     font-family: 'Baloo 2';
