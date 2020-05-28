@@ -324,7 +324,6 @@ input:checked + .slider:before {
     height: 1400px;
     border: 1px solid #00ADEE1A;
     border-radius: 50%;
-    z-index: ;
 }
 .circle-5 {
     display: flex;
