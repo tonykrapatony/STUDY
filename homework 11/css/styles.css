@@ -1,3 +1,4 @@
+/*swords*/
 .swords {
     position: relative;
     width: 220px;
@@ -44,11 +45,180 @@
 }
 .swords>input:checked ~ .sword-2 {
     transform: rotate(25deg) translate(18px, 38px);
-    transition-duration: 1s;
+    transition-duration: .5s;
     box-shadow: 0 0 20px 5px rgb(245,37,37);
 }
 .swords>input:checked ~ .sword-3 {
     transform: rotate(-25deg) translate(13px, -43px);
-    transition-duration: 1s;
+    transition-duration: infinite;
     box-shadow: 0 0 20px 5px rgb(89,255,108);
+}
+
+/*ticker*/
+.ticker {
+    margin-top: 200px;
+    display: flex;
+    justify-content: center;
+}
+.ticker_item {
+	height: 200px;
+}
+.ticker_item span {
+    display: block;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+.shadow-1 {
+    width: 100%;
+    height: 5px;
+    margin-bottom: 0;
+    background: linear-gradient(rgb(47, 79, 109, 0.2), rgb(47, 79, 109, 0.3), rgb(47, 79, 109, 0.2)) no-repeat;
+    background-size: 95% 10px;
+    border-radius: 5px;
+}
+.shadow-2 {
+    width: 100%;
+    height: 10px;
+    background: linear-gradient(rgb(54, 75, 101, 0.2), rgb(54, 75, 101, 0.3), rgb(54, 75, 101, 0.2)) no-repeat;
+    background-size: 95% 10px;
+}
+.shadow-3 {
+    width: 100%;
+    height: 10px;
+    background: linear-gradient(rgb(79, 70, 88, 0.2), rgb(79, 70, 88, 0.3), rgb(79, 70, 88, 0.2)) no-repeat;
+    background-size: 95% 10px;
+    background-position: bottom;
+}
+.shadow-4 {
+    width: 100%;
+    height: 10px;
+    background: linear-gradient(rgb(120, 64, 69, 0.2), rgb(120, 64, 69, 0.3), rgb(120, 64, 69, 0.2)) no-repeat;
+    background-size: 95% 10px;
+    background-position: bottom;
+}
+.shadow-5 {
+    width: 100%;
+    height: 10px;
+    background: linear-gradient(rgb(161, 58, 53, 0.2), rgb(161, 58, 53, 0.3), rgb(161, 58, 53, 0.2)) no-repeat;
+    background-size: 95% 10px;
+    background-position: bottom;
+}
+.shadow-6 {
+    width: 100%;
+    height: 10px;
+    background: linear-gradient(rgb(199, 52, 39, 0.2), rgb(199, 52, 39, 0.3), rgb(199, 52, 39, 0.2)) no-repeat;
+    background-size: 95% 10px;
+    background-position: bottom;
+}
+.shadow-7 {
+    width: 100%;
+    height: 10px;
+    background: linear-gradient(rgb(213, 54, 36, 0.2), rgb(213, 54, 36, 0.3), rgb(213, 54, 36, 0.2)) no-repeat;
+    background-size: 95% 10px;
+    background-position: bottom;
+/*
+    animation: rightShadow .7s alternate  linear;
+    animation-fill-mode: forwards;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+*/
+}
+
+.dot-1 {
+	background-color: #2F4F6D;
+    animation: leftTicker 1.5s linear;
+    animation-iteration-count: infinite;
+}
+.dot-2 {
+	background-color: #364B65;
+}
+.dot-3 {
+	background-color: #4F4658;
+}
+.dot-4 {
+	background-color: #784045;
+}
+.dot-5 {
+	background-color: #A13A35;
+}
+.dot-6 {
+	background-color: #C73427;
+}
+.dot-7 {
+	background-color: #D53624;
+    animation: rightTicker 1.5s linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes leftTicker {
+    0%{
+        transform: translate(0px, -50px); 
+    }
+    10% {
+        transform: translate(0px, -25px);
+    }
+    20% {
+        transform: translate(0px, 0px);
+    }
+    30% {
+        transform: translate(0px, 0px);
+    }
+    40% {
+        transform: translate(0px, 0px);
+    }
+    50%{
+        transform: translate(0px, 0px);
+    }
+    60%{
+        transform: translate(0px, 0px);
+    }
+    70%{
+        transform: translate(0px, 0px);
+    }
+    80%{
+        transform: translate(0px, 0px);
+    }
+    90%{
+        transform: translate(0px, -25px);
+    }
+    100% {
+        transform: translate(0px, -50px);    
+    }
+}
+
+@keyframes rightTicker {
+    0%{
+        transform: translate(0px, 0px); 
+    }
+    10% {
+        transform: translate(0px, 0px);
+    }
+    20% {
+        transform: translate(0px, 0px);
+    }
+    30% {
+        transform: translate(0px, 0px);
+    }
+    40% {
+        transform: translate(0px, -25px);
+    }
+    50%{
+        transform: translate(0px, -50px);
+    }
+    60%{
+        transform: translate(0px, -25px);
+    }
+    70%{
+        transform: translate(0px, 0px);
+    }
+    80%{
+        transform: translate(0px, 0px);
+    }
+    90%{
+        transform: translate(0px, 0px);
+    }
+    100% {
+        transform: translate(0px, 0px);    
+    }
 }
