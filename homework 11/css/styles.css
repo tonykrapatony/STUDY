@@ -1,0 +1,54 @@
+.swords {
+    position: relative;
+    width: 220px;
+    height: 195px;
+    margin: 50px auto;
+    padding: 10px 15px;
+    background: #000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.swords>div {
+    width: 190px;
+    height: 5px;
+    margin: 20px 0;
+    transition: all .5s cubic-bezier(.08,.81,.87,.71);
+    display: flex;
+    justify-content: space-between;
+}
+.sword-3 {
+     transform-origin: bottom right;
+}
+.handle {
+    width: 40px;
+    height: 100%;
+    background-color: #fff;
+}
+.blade {
+    width: 140px;
+    height: 100%;
+    background-color: #fff;
+}
+.swords input {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    cursor: pointer;
+    opacity: 0; /* hide input */
+    z-index: 3;
+}
+.swords>input:checked ~ .sword-1 {
+	display: none;
+}
+.swords>input:checked ~ .sword-2 {
+    transform: rotate(25deg) translate(18px, 38px);
+    transition-duration: 1s;
+    box-shadow: 0 0 20px 5px rgb(245,37,37);
+}
+.swords>input:checked ~ .sword-3 {
+    transform: rotate(-25deg) translate(13px, -43px);
+    transition-duration: 1s;
+    box-shadow: 0 0 20px 5px rgb(89,255,108);
+}
