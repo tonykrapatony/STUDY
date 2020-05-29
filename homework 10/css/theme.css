@@ -1,5 +1,9 @@
+header.container {
+    min-height: 50px;
+}
 .navbar-expand-lg{
     justify-content: space-between;
+    padding-top: 0;
 }
 
 .navbar-collapse{
@@ -7,4 +11,23 @@
 }
 .navbar form {
     width: 216px;
+}
+.nav-content-tabs {
+    border-top: 1px solid #DBDBDB;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.nav-content-tabs .nav-item {
+    display: flex;
+    align-items: center;
+    margin: 0 32px;
+    cursor: pointer;
+}
+.nav-content-tabs .nav-item.active {
+    border-top: 1px solid #262626;
+}
+.nav-content-tabs .nav-item p {
+    margin-left: 5px;
+    margin-bottom: 4px;
 }

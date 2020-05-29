@@ -14,7 +14,6 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
 </head>
 <body>
-    <div class="wraper">
     <header class="container">
         <nav class="navbar navbar-expand-lg navbar-light">
             <a class="navbar-brand" href="#"><img src="./img/logo.svg" alt="Instagram's logo"></a>
@@ -46,39 +45,103 @@
             </div>
         </nav>
     </header>
-<!--
-        <header>
-            <ul class="nav">
-                <li class="nav-item">
-                    <a class="nav-link" href="#"><img src="./img/logo.svg" alt="home icon"></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
-                </li>
-            </ul>
-            <div class="container">
-                <div class="logo"><a class="nav-link" href="#"><img src="./img/logo.svg" alt="home icon"></a></div>
-                <input class="search" type="search" placeholder="Search" aria-label="Search">
-                <ul class="navigation">
-                    <li class="navigation__item">
-                        <a class="nav-link" href="#"><img src="./img/home.svg" alt="home icon"></a>
-                    </li>
-                    <li class="navigation__item">
-                        <a class="nav-link" href="#"><img src="./img/direct.svg" alt="direct icon"></a>
-                    </li>
-                    <li class="navigation__item">
-                        <a class="nav-link" href="#"><img src="./img/explore.svg" alt="explore icon"></a>
-                    </li>
-                    <li class="navigation__item">
-                        <a class="nav-link" href="#" tabindex="-1" aria-disabled="true"><img src="./img/photo.svg" alt="photo icon"></a>
-                    </li>
-                </ul>
+    <div class="header-border-bottom"></div>
+    <main class="container">
+        <div class="row">
+            <div class="col-md-3
+               block1">
+                <div class="user-photo">
+                    <img src="./img/userlogo.svg" alt="user profile photo">
+                </div>
             </div>
-        </header>
--->
+            <div class="col-md-8">
+                <div class="user-profile">
+                    <h2 class="user-profile-name">name</h2>
+                    <button type="button" class="btn btn-primary btn-follow">Follow</button>
+                    <button type="button" class="btn btn-primary dropdown-toggle btn-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button>
+                    <button type="button" class="btn btn-dots">&#8226;&#8226;&#8226;</button>
+                </div>
+                <div class="user-action">
+                    <button type="button" class="btn btn-posts"><span>79</span> posts</button>
+                    <button type="button" class="btn btn-followers"><span>379</span> followers</button>
+                    <button type="button" class="btn btn-following"><span>179</span> following</button>
+                </div>
+                <div class="user-about">
+                    <h3>Name</h3>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.</p>
+                    <a href="#">bit.ly/35Ce3mX</a>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="stories">
+                <div class="storie__item">
+                    <img src="./img/userlogo.svg" alt="storie title">
+                    <p>Name</p>
+                </div>
+                <div class="storie__item">
+                    <img src="./img/userlogo.svg" alt="storie title">
+                    <p>Name</p>
+                </div>
+                <div class="storie__item">
+                    <img src="./img/userlogo.svg" alt="storie title">
+                    <p>Name</p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <div class="container content">
+        <div class="nav nav-content-tabs">
+            <div class="nav-item nav-link active">
+                <img src="./img/posts.svg" alt="posts icon">
+                <p>posts</p>
+            </div>
+            <div class="nav-item nav-link">
+                <img src="./img/tagged.svg" alt="posts icon">
+                <p>tagged</p>
+            </div>
+        </div>
+        <div class="content-grid">
+            <div class="row">
+                <div class="col-md-4 post">
+                    <img src="./img/photo.svg" alt="">
+                </div>
+                <div class="col-md-4 post">
+                    <img src="./img/photo.svg" alt="">
+                </div>
+                <div class="col-md-4 post">
+                    <img src="./img/photo.svg" alt="">
+                </div>
+                <div class="col-md-4 post">
+                    <img src="./img/photo.svg" alt="">
+                </div>
+                <div class="col-md-4 post">
+                    <img src="./img/photo.svg" alt="">
+                </div>
+                <div class="col-md-4 post">
+                    <img src="./img/photo.svg" alt="">
+                </div>
+                <div class="col-md-4 post">
+                    <img src="./img/photo.svg" alt="">
+                </div>
+                <div class="col-md-4 post">
+                    <img src="./img/photo.svg" alt="">
+                </div>
+                <div class="col-md-4 post">
+                    <img src="./img/photo.svg" alt="">
+                </div>
+                <div class="col-md-4 post">
+                    <img src="./img/photo.svg" alt="">
+                </div>
+                <div class="col-md-4 post">
+                    <img src="./img/photo.svg" alt="">
+                </div>
+                <div class="col-md-4 post">
+                    <img src="./img/photo.svg" alt="">
+                </div>
+                
+            </div>
+        </div>
     </div>
 </body>
 </html>
