@@ -61,7 +61,10 @@
     justify-content: center;
 }
 .ticker_item {
-	height: 200px;
+	height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 .ticker_item span {
     display: block;
@@ -69,60 +72,63 @@
     height: 50px;
     border-radius: 50%;
 }
+.first-item {
+    animation: leftShadow 1.5s linear;
+    animation-iteration-count: infinite;
+}
+.last-item {
+    animation: rightShadow 1.5s linear;
+    animation-iteration-count: infinite;
+}
 .shadow-1 {
-    width: 100%;
+    width: 50px;
     height: 5px;
     margin-bottom: 0;
     background: linear-gradient(rgb(47, 79, 109, 0.2), rgb(47, 79, 109, 0.3), rgb(47, 79, 109, 0.2)) no-repeat;
-    background-size: 95% 10px;
+    background-size: 100% 5px;
     border-radius: 5px;
 }
 .shadow-2 {
-    width: 100%;
-    height: 10px;
+    width: 50px;
+    height: 5px;
     background: linear-gradient(rgb(54, 75, 101, 0.2), rgb(54, 75, 101, 0.3), rgb(54, 75, 101, 0.2)) no-repeat;
-    background-size: 95% 10px;
+    background-size: 100% 5px;
+    border-radius: 5px;
 }
 .shadow-3 {
-    width: 100%;
-    height: 10px;
+    width: 50px;
+    height: 5px;
     background: linear-gradient(rgb(79, 70, 88, 0.2), rgb(79, 70, 88, 0.3), rgb(79, 70, 88, 0.2)) no-repeat;
-    background-size: 95% 10px;
-    background-position: bottom;
+    background-size: 100% 5px;
+    border-radius: 5px;
 }
 .shadow-4 {
-    width: 100%;
-    height: 10px;
+    width: 50px;
+    height: 5px;
     background: linear-gradient(rgb(120, 64, 69, 0.2), rgb(120, 64, 69, 0.3), rgb(120, 64, 69, 0.2)) no-repeat;
-    background-size: 95% 10px;
-    background-position: bottom;
+    background-size: 100% 5px;
+    border-radius: 5px;
 }
 .shadow-5 {
-    width: 100%;
-    height: 10px;
+    width: 50px;
+    height: 5px;
     background: linear-gradient(rgb(161, 58, 53, 0.2), rgb(161, 58, 53, 0.3), rgb(161, 58, 53, 0.2)) no-repeat;
-    background-size: 95% 10px;
-    background-position: bottom;
+    background-size: 100% 5px;
+    border-radius: 5px;
 }
 .shadow-6 {
-    width: 100%;
-    height: 10px;
+    width: 50px;
+    height: 5px;
     background: linear-gradient(rgb(199, 52, 39, 0.2), rgb(199, 52, 39, 0.3), rgb(199, 52, 39, 0.2)) no-repeat;
-    background-size: 95% 10px;
-    background-position: bottom;
+    background-size: 100% 5px;
+    border-radius: 5px;
 }
 .shadow-7 {
-    width: 100%;
-    height: 10px;
+    width: 50px;
+    height: 5px;
     background: linear-gradient(rgb(213, 54, 36, 0.2), rgb(213, 54, 36, 0.3), rgb(213, 54, 36, 0.2)) no-repeat;
-    background-size: 95% 10px;
-    background-position: bottom;
-/*
-    animation: rightShadow .7s alternate  linear;
-    animation-fill-mode: forwards;
-    animation-direction: alternate;
-    animation-iteration-count: infinite;
-*/
+    background-size: 100% 5px;
+    border-radius: 5px;
 }
 
 .dot-1 {
@@ -161,19 +167,7 @@
     20% {
         transform: translate(0px, 0px);
     }
-    30% {
-        transform: translate(0px, 0px);
-    }
-    40% {
-        transform: translate(0px, 0px);
-    }
     50%{
-        transform: translate(0px, 0px);
-    }
-    60%{
-        transform: translate(0px, 0px);
-    }
-    70%{
         transform: translate(0px, 0px);
     }
     80%{
@@ -191,12 +185,6 @@
     0%{
         transform: translate(0px, 0px); 
     }
-    10% {
-        transform: translate(0px, 0px);
-    }
-    20% {
-        transform: translate(0px, 0px);
-    }
     30% {
         transform: translate(0px, 0px);
     }
@@ -212,10 +200,51 @@
     70%{
         transform: translate(0px, 0px);
     }
+    100% {
+        transform: translate(0px, 0px);    
+    }
+}
+@keyframes leftShadow {
+    0%{
+        transform: translate(-50px, 0px)
+    }
+    10% {
+        transform: translate(-25px, 0px);
+    }
+    20% {
+        transform: translate(0px, 0px);
+    }
+    50%{
+        transform: translate(0px, 0px);
+    }
     80%{
         transform: translate(0px, 0px);
     }
     90%{
+        transform: translate(-25px, 0px);
+    }
+    100% {
+        transform: translate(-50px, 0px);    
+    }
+}
+
+@keyframes rightShadow {
+    0%{
+        transform: translate(0px, 0px); 
+    }
+    30% {
+        transform: translate(0px, 0px);
+    }
+    40% {
+        transform: translate(25px, 0px);
+    }
+    50%{
+        transform: translate(50px, 0px);
+    }
+    60%{
+        transform: translate(25px, 0px);
+    }
+    70%{
         transform: translate(0px, 0px);
     }
     100% {
