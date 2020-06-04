@@ -428,6 +428,7 @@ footer .footer_container .footer__top {
   flex-wrap: wrap;
 }
 footer .footer_container .footer__top .privecy {
+  padding-right: 20px;
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
@@ -435,6 +436,7 @@ footer .footer_container .footer__top .privecy {
   color: #939EA4;
 }
 footer .footer_container .footer__top .logo {
+  padding-right: 20px;
   font-style: normal;
   font-weight: 900;
   font-size: 26px;
@@ -444,6 +446,7 @@ footer .footer_container .footer__top .logo {
 footer .footer_container .footer__top button {
   width: 110px;
   height: 25px;
+  padding-right: 20px;
   background: #111B47;
   border: none;
   border-radius: 2px;
