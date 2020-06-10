@@ -326,6 +326,20 @@ main .lightfast .lightfast__content p {
 main .lightfast .lightfast__content .pb26 {
   padding-bottom: 26px;
 }
+main .lightfast .lightfast__button button {
+  width: 150px;
+  height: 30px;
+  margin-top: 40px;
+  background: #111B47;
+  border-radius: 2px;
+  border: none;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+  text-align: center;
+  color: #FFFFFF;
+}
 main .bend_conteiner {
   height: 80px;
   max-width: 1920px;

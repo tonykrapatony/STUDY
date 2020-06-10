@@ -302,6 +302,22 @@ main {
                 padding-bottom: 26px;
             }
         }
+        .lightfast__button {
+            button {
+                width: 150px;
+                height: 30px;
+                margin-top: 40px;
+                background: #111B47;
+                border-radius: 2px;
+                border: none;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 24px;
+                text-align: center;
+                color: #FFFFFF;
+            }
+        }
     }
     .bend_conteiner {
         height: 80px;
